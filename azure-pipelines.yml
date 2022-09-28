@@ -90,7 +90,7 @@ stages:
 
 - stage: 'Deploy_QS'
   displayName: 'Deploy the QS web application'
-  dependsOn: Build
+  dependsOn: Deploy_Dev
   jobs:
   - deployment: Deploy
     pool:
