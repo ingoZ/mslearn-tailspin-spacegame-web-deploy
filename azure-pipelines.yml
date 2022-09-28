@@ -113,7 +113,7 @@ stages:
 
 - stage: 'Deploy_Prod1'
   displayName: 'Deploy the Prod1 web application'
-  dependsOn: Build
+  dependsOn: Deploy_QS
   jobs:
   - deployment: Deploy
     pool:
@@ -136,7 +136,7 @@ stages:
 
 - stage: 'Deploy_Prod2'
   displayName: 'Deploy the Prod2 web application'
-  dependsOn: Build
+  dependsOn: Deploy_QS
   jobs:
   - deployment: Deploy
     pool:
